@@ -6,17 +6,14 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.List;
-
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class UserDetail {
+public class OrderedItemsFacade {
 
     private Long id;
-    private String name;
-    private boolean isAdult;
-    private Float pocket;
-    private List<UserOrderInfo> userOrders;
+    private Long userId;
+    private Long drinkId;
+    private Float totalPrice;
 }

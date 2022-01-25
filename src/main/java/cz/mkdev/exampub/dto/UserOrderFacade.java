@@ -12,11 +12,9 @@ import java.util.List;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class UserDetail {
+public class UserOrderFacade {
 
     private Long id;
-    private String name;
-    private boolean isAdult;
-    private Float pocket;
-    private List<UserOrderInfo> userOrders;
+    private Long userId;
+    private List<UserOrderInfo> orderedItemsFacades;
 }
